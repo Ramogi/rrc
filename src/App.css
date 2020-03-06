@@ -19,7 +19,7 @@
 /* globals */
 body {
   padding-top: 66px;
-  color: var(--offWhite);
+  color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: 'Jura', sans-serif;
   line-height: 1.4;
@@ -38,6 +38,7 @@ h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
+  
 }
 h4 {
   font-size: 1.2em;
@@ -54,6 +55,7 @@ h6 {
   font-weight: bold;
   margin-bottom: 1.5em;
 }
+
 
 .btn-primary {
   display: inline-block;
@@ -185,9 +187,10 @@ h6 {
   background:#F7A604;
   color: var(--mainWhite);
   padding: 2rem 1rem;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -258,12 +261,13 @@ h6 {
 }
 .service span {
   display: inline-block;
-  color: var(--primaryColor);
+  color: var(--hvrOrange);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  text-transform: uppercase;
 }
 .services p {
   width: 80%;
