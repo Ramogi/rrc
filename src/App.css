@@ -25,7 +25,7 @@ body {
   line-height: 1.4;
 }
 h1 {
-  font-size: 3em;
+  font-size: 1.2em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
@@ -187,7 +187,8 @@ h6 {
   display: block;
   background:#F7A604;
   color: var(--mainWhite);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1rem 3rem;
+  
   text-align: left;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
@@ -318,6 +319,12 @@ h6 {
   vertical-align: middle;
   align-content: center;
 
+}
+.banner h1:first-child{
+  padding-top: 20px;
+}
+.banner h1:second-child{
+  font-size: 1.2rem;
 }
 .home-main-section .img-wrapper{
   display: flex;
