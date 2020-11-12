@@ -167,7 +167,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: contain;
 }
 
 /* End of HeaderHero */
+
+/* courses */
+.courses {
+  background: var(--offWhite);
+  text-align: center;
+  padding: 5rem 0;
+}
+.courses-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  row-gap: 1rem;
+  column-gap: 50px;
+}
+.course span {
+  display: inline-block;
+  color: var(--hvrOrange);
+  font-size: 6rem;
+  
+}
+.courses h2 {
+  letter-spacing: var(--mainSpacing);
+  text-transform: uppercase;
+}
+.courses p {
+  width: 80%;
+  margin: 0 auto;
+}
