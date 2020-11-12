@@ -20,7 +20,6 @@
 /* globals */
 
 body {
-  padding-top: 10px;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: 'Jura', sans-serif;
@@ -31,13 +30,13 @@ body {
 
 /* Navbar */
 .navbar-container {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
   background: var(--bgBlue);
-  
+  z-index: 1;
 }
 
 /* Logo & Hamburger Menu */
@@ -88,7 +87,7 @@ body {
 }
 
 .show-nav {
-  height: 200px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px){
@@ -133,6 +132,10 @@ body {
     font-weight: bold;
   }
 
+  .nav-links a {
+    margin: 0 1rem;
+  }
+
   @media screen and (min-width: 1025px) {
   
   .menu-center {
@@ -145,8 +148,26 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  .nav-links a {
+    margin: 0 1.5rem;
+  }
 }
   
 }
 
 /* Navbar End */
+
+/* Header Hero */
+
+.defaultHero {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/hero_3.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+
+/* End of HeaderHero */
