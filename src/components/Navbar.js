@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-
 import logo from '../images/logo3.svg';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {Link} from 'react-router-dom';
 
 export default class Navbar extends Component {
-    state={
+    state = {
         isOpen:false
     }
     handleToggle = () =>{
@@ -13,18 +12,18 @@ export default class Navbar extends Component {
     }
     render() {
         return (
-          <nav className="navbar">
-            <div className="nav-center">
+          <nav className="navbar-container">
+            <div className="menu-center">
               <div className="nav-header">
                 <Link to="/">
-                  <img src={logo} alt="Ramogi Resource Centre" />
+                  <img src={logo} alt="Ramogi Resource Centre logo" />
                 </Link>
                 <button
                   type="button"
                   className="nav-btn"
                   onClick={this.handleToggle}
                 >
-                  <GiHamburgerMenu className="nav-icon" />
+                  <GiHamburgerMenu className="menu-icon" />
                 </button>
               </div>
               <ul
@@ -36,19 +35,19 @@ export default class Navbar extends Component {
                   <Link to="/">HOME</Link>
                 </li>
                 <li>
-                  <Link to="/About">ABOUT</Link>
+                  <Link to="/pages/About">ABOUT</Link>
                 </li>
                 <li>
-                  <Link to="/Courses">COURSES</Link>
+                  <Link to="/pages/Courses">COURSES</Link>
                 </li>
                 <li>
-                  <Link to="/">GALLERY</Link>
+                  <Link to="/pages/Gallery">GALLERY</Link>
                 </li>
                 <li>
-                  <Link to="/">BLOG</Link>
+                  <Link to="/pages/Blog">BLOG</Link>
                 </li>
                 <li>
-                  <Link to="/">DONATE</Link>
+                  <Link to="/pages/Donate">DONATE</Link>
                 </li>
               </ul>
             </div>

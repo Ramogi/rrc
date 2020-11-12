@@ -122,6 +122,11 @@ h6 {
   transition: var(--mainTransition);
   list-style-type: none;
 }
+.nav-links li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav-links a {
   display: block;
   text-decoration: none;

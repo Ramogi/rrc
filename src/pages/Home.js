@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Hero>
                 <Banner title="SOLAR LEARNING" subtitle= "ENTREPRENEURSHIP" slug="&amp; VOCATIONAL TRAINING">
-                    <Link to="/about" className="btn-primary">
+                    <Link to="/pages/about" className="btn-primary">
                         Learn more
                     </Link>
                 </Banner>
