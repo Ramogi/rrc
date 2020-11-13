@@ -6,10 +6,19 @@ import Courses from '../components/Courses'
 import FeaturedCourses from '../components/FeaturedCourses'
 export default function Home() {
     return (
-        <>
-            <Hero/>
-            <Courses/>
-        </>
+      <>
+        <Hero />
+        <Banner
+          title="SOLAR LEARNING"
+          subtitle="ENTREPRENEURSHIP"
+          slug="&amp; VOCATIONAL TRAINING"
+        >
+          <Link to="/pages/about" className="btn-primary">
+            Learn more &gt;&gt;
+          </Link>
+        </Banner>
+        <Courses />
+      </>
     );
 }
 

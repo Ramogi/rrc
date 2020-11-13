@@ -4,9 +4,9 @@ import Hero from '../components/Hero';
 export const About = () => {
     return (
       <>
-        <h2>Hello From About</h2>
-        <Hero hero="aboutHero" />
-    
+        <Hero hero = "aboutHero">
+          
+        </Hero>
       </>
     );
 }

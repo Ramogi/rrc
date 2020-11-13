@@ -38,6 +38,15 @@ body {
   background: var(--bgBlue);
   z-index: 1;
 }
+/* Image 
+image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    overflow: hidden;
+}
+
+*/
 
 /* Logo & Hamburger Menu */
 
@@ -90,7 +99,27 @@ body {
   height: auto;
 }
 
+  /* Header Hero */
+
+.defaultHero {
+  width: 100%;
+  min-height: calc(50vh - 200px);
+  background: url("../images/hero_home.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End of HeaderHero */
+
 @media screen and (min-width: 768px){
+
+   /* Header Hero*/ 
+
+.defaultHero {
+  min-height: calc(45vh - 150px);
+}
+  /* Header Hero */
   .nav-btn {
     display: none;
   }
@@ -117,9 +146,25 @@ body {
     margin: 0 0.5rem;
     padding: 0.5rem 0;
   }
+  /* Banner for larger screens*/
+.banner h1 {
+  font-size: 3rem;
+}
+.banner h3 {
+  font-size: 3rem;
 }
 
-@media screen and (min-width: 769px) {
+/* End*/
+}
+
+
+@media screen and (min-width: 1025px) {
+     /* Header Hero*/ 
+
+.defaultHero {
+  min-height: calc(75vh - 200px);
+}
+  /* Header Hero */
   
   .menu-center {
     max-width: 1024px;
@@ -136,7 +181,7 @@ body {
     margin: 0 1rem;
   }
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1201px) {
   
   .menu-center {
     max-width: 1200px;
@@ -158,24 +203,72 @@ body {
 
 /* Navbar End */
 
-/* Header Hero */
 
-.defaultHero {
-  width: 100%;
-  min-height: 100vh;
-  background: url("../images/hero_3.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Banner Text */
+
+.banner h1 {
+  font-size: 1.5rem;
+}
+.banner h3 {
+  font-size: 1.4rem;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F7A604;
+    padding: 2rem 2rem 2rem;
+    color: #fff;
 }
 
-/* End of HeaderHero */
+
+/* End of Banner */
+
+/* Buttons*/
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--mainBlack);
+  background: var(--offWhite);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--offWhite);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius:0.3rem;
+  margin-top: 1rem;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--bgBlue);
+}
+
+/* End of Buttons*/
+
+/* Title */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color:var(--hvrOrange);
+}
+
+/* end of Title */
+
 
 /* courses */
 .courses {
   background: var(--offWhite);
   text-align: center;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 .courses-center {
   width: 90vw;
@@ -194,8 +287,10 @@ body {
 .courses h2 {
   letter-spacing: var(--mainSpacing);
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 .courses p {
   width: 80%;
   margin: 0 auto;
+  text-align: justify;
 }
